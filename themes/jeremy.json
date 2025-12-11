@@ -3,7 +3,7 @@
   "theme": {
     "background": "none",
     "backgroundPanel": "#06080f",
-    "backgroundElement": "#06080f",
+    "backgroundElement": "none",
     "text": "#F3F6F9",
     "textMuted": "#5C6170",
     "primary": "#7FB4CA",
