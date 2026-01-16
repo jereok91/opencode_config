@@ -19,7 +19,7 @@ Antes de comenzar, asegúrate de tener instalado:
 ### 1. Ubicarse en el directorio de configuración del usuario
 
 ```bash
-cd $HOME/.config
+cd ~/.config
 ```
 
 ### 2. Clonar el repositorio
@@ -31,7 +31,7 @@ git clone https://github.com/jereok91/opencode_config.git
 ### 3. Crear el enlace simbólico del archivo principal de configuración
 
 ```bash
-ln -s opencode_config/opencode.json $HOME/.config/opencode.json
+ln -s ~/.config/opencode_config/opencode.json ~/.config/opencode/opencode.json
 ```
 
 ### 4. Crear el directorio de temas (si no existe)
@@ -43,7 +43,7 @@ mkdir -p $HOME/.config/opencode/themes
 ### 5. Crear el enlace simbólico del tema
 
 ```bash
-ln -s opencode_config/themes/jeremy.json $HOME/.config/opencode/themes/jeremy.json
+ln -s ~/.config/opencode_config/themes/jeremy.json ~/.config/opencode/themes/jeremy.json
 ```
 
 ✅ **Listo**. Ya tienes tu configuración de OpenCode funcionando mediante enlaces simbólicos.
@@ -79,5 +79,3 @@ rm -r $HOME/.config/opencode_config
 - Este enfoque es ideal para mantener configuraciones versionadas.
 - Puedes adaptar los nombres de los archivos o temas según tus necesidades.
 - Funciona igual en **Linux** y **macOS**.
-
-
