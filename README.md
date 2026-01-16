@@ -16,31 +16,58 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ## 📂 Instalación
 
-### 1. Ubicarse en el directorio de configuración del usuario
+### 🚀 Instalación rápida (un solo comando)
+
+Puedes instalar todo de una sola vez copiando y pegando este comando:
+
+```bash
+cd ~/.config && \
+git clone https://github.com/jereok91/opencode_config.git && \
+ln -s ~/.config/opencode_config/opencode.json ~/.config/opencode/opencode.json && \
+mkdir -p $HOME/.config/opencode/themes && \
+ln -s ~/.config/opencode_config/themes/jeremy.json ~/.config/opencode/themes/jeremy.json && \
+echo "✅ ¡Instalación completada!"
+```
+
+**O usa el script automático:**
+
+```bash
+cd ~/.config
+git clone https://github.com/jereok91/opencode_config.git
+bash opencode_config/install.sh
+```
+
+---
+
+### 📝 Instalación paso a paso
+
+Si prefieres hacerlo manualmente, sigue estos pasos:
+
+#### 1. Ubicarse en el directorio de configuración del usuario
 
 ```bash
 cd ~/.config
 ```
 
-### 2. Clonar el repositorio
+#### 2. Clonar el repositorio
 
 ```bash
 git clone https://github.com/jereok91/opencode_config.git
 ```
 
-### 3. Crear el enlace simbólico del archivo principal de configuración
+#### 3. Crear el enlace simbólico del archivo principal de configuración
 
 ```bash
 ln -s ~/.config/opencode_config/opencode.json ~/.config/opencode/opencode.json
 ```
 
-### 4. Crear el directorio de temas (si no existe)
+#### 4. Crear el directorio de temas (si no existe)
 
 ```bash
 mkdir -p $HOME/.config/opencode/themes
 ```
 
-### 5. Crear el enlace simbólico del tema
+#### 5. Crear el enlace simbólico del tema
 
 ```bash
 ln -s ~/.config/opencode_config/themes/jeremy.json ~/.config/opencode/themes/jeremy.json
